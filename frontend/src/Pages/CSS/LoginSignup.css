@@ -1,0 +1,112 @@
+.loginsignup {
+    width: 100%;
+    height: 80vh;
+    background: #fce3fe;
+    padding-top: 100px;
+    display: flex; /* Center the container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.loginsignup-container {
+    width: 100%; /* Full width for smaller screens */
+    max-width: 580px; /* Maximum width */
+    height: auto; /* Allow height to adjust based on content */
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+.loginsignup-container h1 {
+    margin: 20px 0px;
+}
+
+.loginsignup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.loginsignup-fields input {
+    height: 72px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+
+.loginsignup-container button {
+    width: 100%; /* Full width for button */
+    height: 72px;
+    color: white;
+    background: #ff4141;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loginsignup-login {
+    margin-top: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center; /* Center text */
+}
+
+.loginsignup-login span {
+    color: #ff4141;
+    font-weight: 600;
+}
+
+.loginsignup-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .loginsignup-container {
+        padding: 30px; /* Reduce padding for smaller screens */
+    }
+
+    .loginsignup-fields input {
+        font-size: 16px; /* Smaller font size for inputs */
+    }
+
+    .loginsignup-container button {
+        font-size: 20px; /* Adjust button font size */
+    }
+
+    .loginsignup-login {
+        font-size: 16px; /* Adjust font size for login text */
+    }
+
+    .loginsignup-agree {
+        font-size: 16px; /* Adjust font size for agree text */
+    }
+}
+
+@media (max-width: 480px) {
+    .loginsignup-container {
+        padding: 20px; /* Further reduce padding for very small screens */
+    }
+
+    .loginsignup-fields {
+        gap: 20px; /* Reduce gap between input fields */
+    }
+
+    .loginsignup-container button {
+        height: 60px; /* Adjust button height */
+    }
+}

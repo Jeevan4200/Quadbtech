@@ -1,0 +1,135 @@
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    display: flex;
+    flex-direction: row; /* Default horizontal layout */
+}
+
+/* Left section of the hero */
+.hero_left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+
+/* Heading in the left section */
+.hero-left h2 {
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* Main text in the left section */
+.hero-left p {
+    color: #171717;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+/* Icon in the left section */
+.hero-hand-icon img {
+    width: 105px;
+}
+
+/* Button in the left section */
+.hero-latest-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Right section of the hero */
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Styles */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .hero_left {
+        padding-left: 100px; /* Reduce padding */
+    }
+
+    .hero-left p {
+        font-size: 80px; /* Reduce main text size */
+    }
+
+    .hero-left h2 {
+        font-size: 22px; /* Reduce heading size */
+    }
+
+    .hero-latest-button {
+        width: 260px; /* Smaller button */
+        height: 60px;
+        font-size: 18px; /* Smaller font size */
+    }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack left and right sections vertically */
+    }
+
+    .hero_left {
+        padding-left: 50px; /* Further reduce padding */
+        align-items: center; /* Center align the content */
+        text-align: center; /* Center the text */
+    }
+
+    .hero-left p {
+        font-size: 60px; /* Smaller font for mobile */
+    }
+
+    .hero-left h2 {
+        font-size: 20px;
+    }
+
+    .hero-latest-button {
+        width: 240px; /* Adjust button size */
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .hero-hand-icon img {
+        width: 80px; /* Reduce icon size */
+    }
+}
+
+/* Extra small screens (mobile < 480px) */
+@media (max-width: 480px) {
+    .hero_left {
+        padding-left: 20px; /* Minimum padding */
+    }
+
+    .hero-left p {
+        font-size: 45px; /* Further reduce main text size */
+    }
+
+    .hero-latest-button {
+        width: 200px; /* Small button for small screens */
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .hero-hand-icon img {
+        width: 60px; /* Smaller icon size */
+    }
+}

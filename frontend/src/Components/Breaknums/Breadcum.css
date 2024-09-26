@@ -1,0 +1,44 @@
+.breadcrum {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 18px; /* Base font size */
+}
+
+.breadcrum a {
+    text-decoration: none; /* Style links */
+    color: #333; /* Default text color */
+    margin-right: 10px; /* Space between items */
+}
+
+.breadcrum a:hover {
+    text-decoration: underline; /* Add hover effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .breadcrum {
+        margin: 20px; /* Reduce margin for smaller screens */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .breadcrum a {
+        margin-right: 5px; /* Reduce spacing between items */
+    }
+}
+
+@media (max-width: 480px) {
+    .breadcrum {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        margin: 10px; /* Further reduce margin */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .breadcrum a {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 5px; /* Add spacing below items */
+    }
+}

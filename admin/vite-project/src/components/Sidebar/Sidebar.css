@@ -1,0 +1,64 @@
+/* Overall sidebar container styling */
+.Sidebar {
+    width: 250px; /* Set the width for the sidebar */
+    background-color: #1f2937; /* Dark background color */
+    height: calc(100vh - 60px); /* Adjust height based on navbar height (if navbar height is 60px) */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    padding-top: 20px; /* Space at the top */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    position: fixed; /* Fixed position */
+    top: 60px; /* Ensure the sidebar starts right after the navbar (if navbar height is 60px) */
+    left: 0; /* Sidebar sticks to the left */
+    z-index: 999; /* Sidebar behind the navbar */
+    overflow-y: auto; /* Allows scrolling if the sidebar content exceeds the viewport */
+  }
+  
+  /* Individual sidebar items */
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px; /* Padding around each item */
+    margin: 10px 0; /* Spacing between items */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners for items */
+  }
+  
+  .sidebar-item:hover {
+    background-color: #374151; /* Darken background on hover */
+    transform: scale(1.02); /* Slightly scale up on hover */
+  }
+  
+  /* Icon inside the sidebar */
+  .sidebar-item img {
+    width: 24px; /* Set a consistent icon size */
+    height: 24px;
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  /* Text inside the sidebar item */
+  .sidebar-item p {
+    color: #f9fafb; /* Light text color */
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize; /* Capitalize the text */
+  }
+  
+  /* For mobile responsiveness */
+  @media (max-width: 768px) {
+    .Sidebar {
+      width: 200px; /* Smaller sidebar for mobile */
+    }
+  
+    .sidebar-item img {
+      width: 20px; /* Smaller icons for mobile */
+      height: 20px;
+    }
+  
+    .sidebar-item p {
+      font-size: 14px; /* Adjust font size for mobile */
+    }
+  }
+  

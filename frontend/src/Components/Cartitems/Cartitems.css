@@ -1,0 +1,134 @@
+.cartitems {
+    margin: 100px 170px;
+}
+
+.cartitems hr {
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+
+.cartitems-format-main {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cartitems-format {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 15px 0;
+    font-size: 17px;
+    color: #454545;
+    font-weight: 500;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.carticon-product-icon {
+    height: 62px;
+}
+
+.cartitems-remove-icon {
+    width: 15px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+
+.cartitems-quantity {
+    width: 64px;
+    height: 50px;
+    border: 2px solid #ebebeb;
+    background: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add hover effect to remove icon */
+.cartitems-remove-icon:hover {
+    transform: scale(1.1);
+}
+
+.cartitems-down {
+    display: flex;
+    justify-content: space-between;  /* Space out the two sections evenly */
+    margin: 100px 0px;
+}
+
+.cartitems-total, .cartitems-promocode {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Align total and promo code sections next to each other */
+.cartitems-total {
+    flex: 1;
+    margin-right: 50px;  /* Reduce margin for better alignment */
+}
+
+.cartitems-total button {
+    width: 263px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-start;  /* Align button to the left */
+}
+
+/* Style for hover state of the checkout button */
+.cartitems-total button:hover {
+    background: #ff3a3a;
+}
+
+.cartitems-promocode {
+    flex: 1;
+    margin-left: 50px; /* Align promo section closer to total section */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cartitems-promocode p {
+    margin-bottom: 10px;
+}
+
+.cartitems-promobox {
+    display: flex;
+    gap: 10px;
+}
+
+.cartitems-promobox input {
+    width: 200px;
+    height: 40px;
+    padding: 0 10px;
+    border: 2px solid #ebebeb;
+    outline: none;
+    font-size: 16px;
+}
+
+.cartitems-promobox button {
+    height: 40px;
+    padding: 0 20px;
+    background: #454545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.cartitems-promobox button:hover {
+    background: #333;
+}
